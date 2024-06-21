@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Profit Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-size: 20px;
+            margin-bottom: 5px;
+            display: block;
+            color: #666;
+        }
+        input[type="number"] {
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            width: 220px;
+            padding: 12px;
+            font-size: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://example.com/logo.png" alt="Uber Logo" width="100"><br>
+    <h1>Uber Profit Calculator</h1>
+    <form action="/" method="post">
+        <label for="distance">Distance (km):</label><br>
+        <input type="number" id="distance" name="distance" required><br>
+
+        <label for="time">Time (minutes):</label><br>
+        <input type="number" id="time" name="time" required><br>
+
+        <label for="total_fare">Total Fare (CAD):</label><br>
+        <input type="number" id="total_fare" name="total_fare" step="0.01" required><br>
+
+        <label for="gas_price_per_liter">Gas Price per Liter (CAD):</label><br>
+        <input type="number" id="gas_price_per_liter" name="gas_price_per_liter" step="0.01" required><br>
+
+        <label for="fuel_consumption">Fuel Consumption (km/L):</label><br>
+        <input type="number" id="fuel_consumption" name="fuel_consumption" step="0.01" required><br>
+
+        <input type="submit" value="Calculate Profit">
+    </form>
+</body>
+</html>
